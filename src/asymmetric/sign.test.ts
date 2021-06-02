@@ -15,6 +15,6 @@ describe("sign and verify", () => {
   test("invalid", () => {
     const v = S.verify(data, "a wrong signature", publicKey);
 
-    expect(v).toEqual(true);
+    expect(v).toEqual(false);
   });
 });
