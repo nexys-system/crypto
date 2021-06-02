@@ -19,7 +19,7 @@ describe("sign and verify", () => {
     expect(v).toEqual(false);
   });
 
-  test("change of content signature", () => {
+  test("change of content => wrong signature", () => {
     const v = S.verify(data + "s", s, publicKey);
 
     expect(v).toEqual(false);
