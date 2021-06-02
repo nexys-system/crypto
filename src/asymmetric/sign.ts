@@ -6,7 +6,9 @@ const algorithm = "SHA256";
 const outputEncoding = "hex";
 // end params
 
-export const sign = (data: string, privateKey: crypto.KeyLike): string => {
+type DataInput = string | Buffer;
+
+export const sign = (data: DataInput, privateKey: crypto.KeyLike): string => {
   const sign = crypto.createSign(algorithm);
   sign.write(data);
   sign.end();
@@ -14,7 +16,7 @@ export const sign = (data: string, privateKey: crypto.KeyLike): string => {
 };
 
 export const verify = (
-  data: string,
+  data: DataInput,
   signature: string,
   publicKey: crypto.KeyLike
 ): boolean => {
