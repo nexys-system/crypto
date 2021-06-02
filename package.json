@@ -1,6 +1,6 @@
 {
   "name": "@nexys/crypto",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "node crypto helper",
   "scripts": {
     "test": "rm -rf dist && jest",
