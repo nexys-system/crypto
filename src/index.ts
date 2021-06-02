@@ -1,3 +1,2 @@
-import * as Symmetric from "./symmetric";
-
-export { Symmetric };
+export * as Symmetric from "./symmetric";
+export * as Asymetric from "./asymmetric";
