@@ -1,4 +1,4 @@
-import * as C from "./symmetric";
+import * as C from "./index";
 
 test("encrypt and decrypt", () => {
   const text = "a seccret text";
